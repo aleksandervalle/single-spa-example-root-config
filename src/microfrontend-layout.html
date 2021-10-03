@@ -1,0 +1,19 @@
+<single-spa-router>
+  <main style="display: flex; flex-direction: row; width: 100%">
+    <route default>
+      <application name="@org/menu"></application>
+      <route default>
+        <application name="@org/people"></application>
+      </route>
+      <route path="people">
+        <application name="@org/people"></application>
+      </route>
+      <route path="dogs">
+        <application name="@org/dogs"></application>
+      </route>
+      <route path="cats">
+        <application name="@org/cats"></application>
+      </route>
+    </route>
+  </main>
+</single-spa-router>
